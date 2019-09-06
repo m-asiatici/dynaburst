@@ -1,0 +1,447 @@
+
+*** Running vivado
+    with args -log len_stream_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source len_stream_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source len_stream_0.tcl -notrace
+Command: synth_design -top len_stream_0 -part xc7z045ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26495 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1323.812 ; gain = 85.000 ; free physical = 749 ; free virtual = 3445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'len_stream_0' [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/synth/len_stream_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'len_stream' [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/len_stream.v:12]
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'len_stream_AXILiteS_s_axi' [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/len_stream_AXILiteS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_VAL_SIZE_DATA_0 bound to: 6'b010000 
+	Parameter ADDR_VAL_SIZE_CTRL bound to: 6'b010100 
+	Parameter ADDR_OUTPUT_SIZE_DATA_0 bound to: 6'b011000 
+	Parameter ADDR_OUTPUT_SIZE_CTRL bound to: 6'b011100 
+	Parameter ADDR_OFFSET_DATA_0 bound to: 6'b100000 
+	Parameter ADDR_OFFSET_CTRL bound to: 6'b100100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/len_stream_AXILiteS_s_axi.v:210]
+INFO: [Synth 8-256] done synthesizing module 'len_stream_AXILiteS_s_axi' (1#1) [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/len_stream_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'Block_proc' [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/Block_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/Block_proc.v:54]
+INFO: [Synth 8-256] done synthesizing module 'Block_proc' (2#1) [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/Block_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_1_proc' [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/Loop_1_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state5 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/Loop_1_proc.v:55]
+INFO: [Synth 8-256] done synthesizing module 'Loop_1_proc' (3#1) [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/Loop_1_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d2_A' [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/fifo_w32_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d2_A_shiftReg' [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/fifo_w32_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d2_A_shiftReg' (4#1) [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/fifo_w32_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d2_A' (5#1) [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/fifo_w32_d2_A.v:45]
+WARNING: [Synth 8-6014] Unused sequential element Block_proc_U0_ap_ready_count_reg was removed.  [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/len_stream.v:249]
+WARNING: [Synth 8-6014] Unused sequential element Loop_1_proc_U0_ap_ready_count_reg was removed.  [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/len_stream.v:257]
+INFO: [Synth 8-256] done synthesizing module 'len_stream' (6#1) [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/len_stream.v:12]
+INFO: [Synth 8-256] done synthesizing module 'len_stream_0' (7#1) [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/synth/len_stream_0.v:57]
+WARNING: [Synth 8-3331] design Loop_1_proc has unconnected port rowptr_stream_TKEEP[3]
+WARNING: [Synth 8-3331] design Loop_1_proc has unconnected port rowptr_stream_TKEEP[2]
+WARNING: [Synth 8-3331] design Loop_1_proc has unconnected port rowptr_stream_TKEEP[1]
+WARNING: [Synth 8-3331] design Loop_1_proc has unconnected port rowptr_stream_TKEEP[0]
+WARNING: [Synth 8-3331] design Loop_1_proc has unconnected port rowptr_stream_TLAST
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1365.344 ; gain = 126.531 ; free physical = 757 ; free virtual = 3453
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1365.344 ; gain = 126.531 ; free physical = 759 ; free virtual = 3455
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/constraints/len_stream_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/constraints/len_stream_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.runs/len_stream_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.runs/len_stream_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1809.961 ; gain = 0.000 ; free physical = 521 ; free virtual = 3220
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 602 ; free virtual = 3303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 602 ; free virtual = 3303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.runs/len_stream_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 605 ; free virtual = 3305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'len_stream_AXILiteS_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5545] ROM "tmp_1_i_fu_87_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element i_i_reg_65_reg was removed.  [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/Loop_1_proc.v:282]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/fifo_w32_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/fifo_w32_d2_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/fifo_w32_d2_A.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'len_stream_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 595 ; free virtual = 3295
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               32 Bit    Registers := 12    
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   8 Input     32 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module len_stream_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   8 Input     32 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Block_proc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+Module Loop_1_proc 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 9     
+Module fifo_w32_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module len_stream 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "Loop_1_proc_U0/tmp_1_i_fu_87_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element Loop_1_proc_U0/i_i_reg_65_reg was removed.  [/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.srcs/sources_1/ip/len_stream_0/hdl/verilog/Loop_1_proc.v:282]
+WARNING: [Synth 8-3331] design len_stream has unconnected port rowptr_stream_TKEEP[3]
+WARNING: [Synth 8-3331] design len_stream has unconnected port rowptr_stream_TKEEP[2]
+WARNING: [Synth 8-3331] design len_stream has unconnected port rowptr_stream_TKEEP[1]
+WARNING: [Synth 8-3331] design len_stream has unconnected port rowptr_stream_TKEEP[0]
+WARNING: [Synth 8-3331] design len_stream has unconnected port rowptr_stream_TLAST
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Loop_1_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Block_proc_U0/ap_CS_fsm_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_CS_fsm_reg[0]) is unused and will be removed from module len_stream.
+WARNING: [Synth 8-3332] Sequential element (Loop_1_proc_U0/ap_done_reg_reg) is unused and will be removed from module len_stream.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 571 ; free virtual = 3278
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 433 ; free virtual = 3140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 442 ; free virtual = 3125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 442 ; free virtual = 3125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 438 ; free virtual = 3126
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 438 ; free virtual = 3126
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 438 ; free virtual = 3126
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 438 ; free virtual = 3126
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 438 ; free virtual = 3126
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 438 ; free virtual = 3126
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[2] | 4      | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[2] | 4      | 32         | 32     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    27|
+|2     |LUT1   |     3|
+|3     |LUT2   |     7|
+|4     |LUT3   |   301|
+|5     |LUT4   |    54|
+|6     |LUT5   |    24|
+|7     |LUT6   |    69|
+|8     |MUXF7  |     2|
+|9     |SRL16E |    32|
+|10    |FDRE   |   458|
+|11    |FDSE   |     6|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------+--------------------------+------+
+|      |Instance                        |Module                    |Cells |
++------+--------------------------------+--------------------------+------+
+|1     |top                             |                          |   983|
+|2     |  inst                          |len_stream                |   983|
+|3     |    Block_proc_U0               |Block_proc                |   207|
+|4     |    Loop_1_proc_U0              |Loop_1_proc               |   408|
+|5     |    len_stream_AXILiteS_s_axi_U |len_stream_AXILiteS_s_axi |   320|
+|6     |    tmp_loc_channel_U           |fifo_w32_d2_A             |    46|
+|7     |      U_fifo_w32_d2_A_ram       |fifo_w32_d2_A_shiftReg    |    34|
++------+--------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 438 ; free virtual = 3126
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1809.961 ; gain = 126.531 ; free physical = 491 ; free virtual = 3184
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1809.961 ; gain = 571.148 ; free physical = 491 ; free virtual = 3184
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:51 . Memory (MB): peak = 1817.969 ; gain = 618.129 ; free physical = 483 ; free virtual = 3173
+INFO: [Common 17-1381] The checkpoint '/home/asiatici/epfl/memory-coalescer/vivado/spmv/spmv-hls/RTLFullyPipelinedSpMV/RTLFullyPipelinedSpMV.runs/len_stream_0_synth_1/len_stream_0.dcp' has been generated.

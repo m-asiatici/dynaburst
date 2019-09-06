@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RTLFullyPipelinedSpMV.srcs/sources_1/ip/fpacc/sim/fpacc.vhd" \
+"../../../../RTLFullyPipelinedSpMV.srcs/sources_1/ip/fpmul/sim/fpmul.vhd" \
+"../../../../RTLFullyPipelinedSpMV.srcs/sources_1/new/TopLevel.vhd" \
+"../../../../../src/txt_util.vhd" \
+"../../../../RTLFullyPipelinedSpMV.srcs/sim_1/new/TopLevelTB.vhd" \
+
+# Do not sort compile order
+nosort

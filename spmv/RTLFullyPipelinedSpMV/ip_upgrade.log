@@ -1,0 +1,82 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Thu Apr 11 17:40:25 2019
+| Host         : lap-laptop-3 running 64-bit Ubuntu 18.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpmul'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fpmul (xilinx.com:ip:floating_point:7.1 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Thu Apr 11 17:40:22 2019
+| Host         : lap-laptop-3 running 64-bit Ubuntu 18.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpacc'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fpacc (xilinx.com:ip:floating_point:7.1 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Fri Aug 31 17:52:36 2018
+| Host         : lap-laptop-3 running 64-bit Ubuntu 18.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'len_stream_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of len_stream_0 (xilinx.com:hls:len_stream:1.0) from (Rev. 1808311739) to (Rev. 1808311751)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'len_stream_0'.
+
+
+-Upgrade has removed interface 'offset'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'len_stream_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_AXILiteS_ARADDR' width 6 differs from original width 5
+
+-Upgraded port 's_axi_AXILiteS_AWADDR' width 6 differs from original width 5
+
+-Upgrade has removed port 'offset'
+
+
