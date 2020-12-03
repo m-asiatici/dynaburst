@@ -1,5 +1,7 @@
 # DynaBurst: Dynamically Assemblying DRAM Bursts over a Multitude of Random Accesses
 
+**This repository has been migrated to https://github.com/EPFL-LAP/fpl19-DynaBurst and will no longer be maintained.**
+
 This repository contains the full Chisel source code of DynaBurst, a highly flexible, FPGA-optimized, memory system for bandwidth-bound accelerators that perform frequent irregular accesses to DRAM memory. DynaBurst is an extension of our [miss-optimized nonblocking cache](https://github.com/m-asiatici/MSHR-rich) which groups incoming requests into bursts of memory requests. In addition to the reuse of memory responses provided by the nonblocking cache, using bursts increases the available bandwidth by reducing DDR row conflicts and increasing the utilization of DDR bursts. Both mechanisms increase the bandwidth that is available to the accelerators.
 
 Full details are provided in the [wiki](https://github.com/m-asiatici/dynaburst/wiki) and in our paper:
